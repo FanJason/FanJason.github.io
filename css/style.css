@@ -1,3 +1,35 @@
+h1 {
+  font-family: 'Roboto Condensed';
+  line-height: 32px;
+  letter-spacing: 8px;
+  animation-name: example;
+  animation-duration: 2.7s;
+  font-size: 72px;
+  padding-bottom: 8px;
+}
+
+.appear {
+  animation-name: fade;
+  animation-duration: 3.3s;
+}
+
+.site-section {
+    opacity:0;
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 0;}
+}
+
+@keyframes fade {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 0;}
+  75%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 body {
   background: #fff;
   color: #798a9a;
@@ -46,6 +78,7 @@ a {
   padding: 15px 20px !important; }
 
 .site-navbar {
+
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -56,7 +89,7 @@ a {
   top: 20px;
   width: 100%;
   z-index: 200;
-  background: #fff; }
+  background: #fff;}
   .site-navbar .navbar-brand {
     display: inline-block;
     border: 2px solid #fff;
@@ -65,7 +98,7 @@ a {
     text-transform: uppercase;
     letter-spacing: .2em; }
     .site-navbar .navbar-brand:hover {
-      color: #fff; }
+      color: #57d131; }
   .site-navbar.bg-light {
     background: transparent !important; }
     @media (max-width: 991.98px) {
@@ -80,6 +113,15 @@ a {
           color: #000; } }
   .site-navbar .navbar-nav > li > a {
     color: #fff !important;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+  .site-navbar .navbar-nav > li > a:hover {
+    color: #57d131 !important;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: .1em;

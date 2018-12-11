@@ -25,6 +25,65 @@
 		}
 	};
 
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			$(".hideme").each(function(i) {
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+					if (bottom_of_window > bottom_of_object - 400){
+					$(this).animate({'opacity':'1', }, {"duration": 1200});
+				}
+			});
+		});
+	});
+
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			$(".derivative").each(function(i) {
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+					if (bottom_of_window > bottom_of_object - 1300){
+					$(this).animate({'opacity':'1', }, {"duration": 1200});
+				}
+			});
+		});
+	});
+
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			$(".derivative1").each(function(i) {
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+					if (bottom_of_window > bottom_of_object - 100){
+					$(this).animate({'opacity':'1', }, {"duration": 1200});
+				}
+			});
+		});
+	});
+
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			$(".derivative2").each(function(i) {
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+					if (bottom_of_window > bottom_of_object - 900){
+					$(this).animate({'opacity':'1', }, {"duration": 1200});
+				}
+			});
+		});
+	});
+
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			$(".derivative3").each(function(i) {
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+					if (bottom_of_window > bottom_of_object - 500){
+					$(this).animate({'opacity':'1', }, {"duration": 1200});
+				}
+			});
+		});
+	});
 
 	// navigation
 	var OnePageNav = function() {
@@ -51,6 +110,8 @@
 		})
 	};
 	
+
+
 
 	var offCanvasNav = function() {
 		// var toggleNav = $('.js-pb_nav-toggle'),
