@@ -17,6 +17,14 @@ h1 {
   animation-duration: 3.3s;
 }
 
+.padding {
+  padding-right: 7px;
+}
+
+.space {
+  padding-bottom: -25px;
+}
+
 .bottom {
   border: none;
   bottom: -325px;
