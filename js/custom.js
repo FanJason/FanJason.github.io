@@ -27,23 +27,11 @@
 
 	$(document).ready(function() {
 		$(window).scroll(function() {
-			$(".hideme").each(function(i) {
-				var bottom_of_object = $(this).position().top + $(this).outerHeight();
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
-					if (bottom_of_window > bottom_of_object - 400){
-					$(this).animate({'opacity':'1', }, {"duration": 1200});
-				}
-			});
-		});
-	});
-
-	$(document).ready(function() {
-		$(window).scroll(function() {
 			$(".derivative").each(function(i) {
-				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_object = $(this).position().top;
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
-					if (bottom_of_window > bottom_of_object - 1300){
-					$(this).animate({'opacity':'1', }, {"duration": 1200});
+					if (bottom_of_window > bottom_of_object + 200){
+					$(this).animate({'opacity':'1', }, {"duration": 1500});
 				}
 			});
 		});

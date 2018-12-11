@@ -8,9 +8,49 @@ h1 {
   padding-bottom: 8px;
 }
 
+.links:hover {
+  color: #57d131;
+}
+
 .appear {
   animation-name: fade;
   animation-duration: 3.3s;
+}
+
+.bottom {
+  border: none;
+  bottom: -325px;
+  color: #fff;
+  font-size: 0.8em;
+  height: 8.5em;
+  left: 50%;
+  letter-spacing: 0.225em;
+  margin-left: -8.5em;
+  opacity: 1;
+  outline: 0;
+  padding-left: 0.225em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 17em;
+  z-index: 1;
+}
+
+.bottom:after {
+  animation-name: fade;
+  animation-duration: 3.3s;
+  background-image: url("images/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 4em;
+  content: '';
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  margin: 0 0 0 -0.75em;
+  position: absolute;
+  width: 1.5em;
 }
 
 .site-section {
@@ -69,9 +109,9 @@ a {
   -webkit-transition: .3s all;
   -o-transition: .3s all;
   transition: .3s all;
-  color: #57d131; }
+  color: #798a9a; }
   a:hover, a:focus, a:active {
-    color: #4ebe2a;
+    color: #798a9a;
     text-decoration: none; }
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
