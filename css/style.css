@@ -8,6 +8,10 @@ h1 {
   font-size: 50px;
 }
 
+.visit:visited {
+  color: #fff;
+}
+
 .sub {
   letter-spacing: 2px;
 }
@@ -125,6 +129,7 @@ a {
   a:hover, a:focus, a:active {
     color: #798a9a;
     text-decoration: none; }
+    
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
   padding: 15px 20px !important; }
