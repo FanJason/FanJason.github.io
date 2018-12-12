@@ -69,7 +69,7 @@
 
 	$('.eth').mouseout(
 		function() {
-			$(this).attr('src', './images/eth.jpg')
+			$(this).attr('src', './images/ETH.jpg')
 		}
 	)
 
@@ -87,7 +87,7 @@
 
 	$('.stockWatch').hover(
 		function(){
-		  $(this).attr('src', './images/StockShot.jpg');
+		  $(this).attr('src', './images/stockShot.jpg');
 		}
 	)
 
