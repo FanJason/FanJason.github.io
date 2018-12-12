@@ -22,11 +22,21 @@ h1 {
 
 .appear {
   animation-name: fade;
-  animation-duration: 3.3s;
+  animation-duration: 3s;
+}
+
+.appearFast {
+  animation-name: fade;
+  animation-duration: 1s;
+  opacity: 1;
 }
 
 .space {
   padding-top: 35px;
+}
+
+.spaceExtra {
+  padding-top: 200px;
 }
 
 .padding {
@@ -154,6 +164,13 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;}
+    .color .navbar-brand {
+      background-image: url("../v2.png");
+      height: 4em;
+      width: 4em;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;}
     .site-navbar .navbar-brand:hover {
       background-image: url("../v2Color.png");
       height: 4em;
@@ -189,6 +206,10 @@ a {
     position: relative;
     text-transform: uppercase;
     letter-spacing: .2em;
+  }
+
+  .color .navbar-nav > li > a {
+    color: #343a40 !important;
   }
   .site-navbar .navbar-nav > li > a:hover {
     color: #57d131 !important;

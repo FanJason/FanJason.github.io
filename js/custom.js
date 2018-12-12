@@ -37,41 +37,77 @@
 		});
 	});
 
-	$(document).ready(function() {
-		$(window).scroll(function() {
-			$(".derivative1").each(function(i) {
-				var bottom_of_object = $(this).position().top + $(this).outerHeight();
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
-					if (bottom_of_window > bottom_of_object - 100){
-					$(this).animate({'opacity':'1', }, {"duration": 1200});
-				}
-			});
-		});
-	});
+	$('.clout').hover(
+		function(){
+		  $(this).attr('src', './images/underDev.jpg');
+		}
+	)
 
-	$(document).ready(function() {
-		$(window).scroll(function() {
-			$(".derivative2").each(function(i) {
-				var bottom_of_object = $(this).position().top + $(this).outerHeight();
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
-					if (bottom_of_window > bottom_of_object - 900){
-					$(this).animate({'opacity':'1', }, {"duration": 1200});
-				}
-			});
-		});
-	});
+	$('.clout').mouseout(
+		function() {
+			$(this).attr('src', './images/clout.jpg')
+		}
+	)
 
-	$(document).ready(function() {
-		$(window).scroll(function() {
-			$(".derivative3").each(function(i) {
-				var bottom_of_object = $(this).position().top + $(this).outerHeight();
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
-					if (bottom_of_window > bottom_of_object - 500){
-					$(this).animate({'opacity':'1', }, {"duration": 1200});
-				}
-			});
-		});
-	});
+	$('.bull').hover(
+		function(){
+		  $(this).attr('src', './images/BCGame.jpg');
+		}
+	)
+
+	$('.bull').mouseout(
+		function() {
+			$(this).attr('src', './images/bc.jpg')
+		}
+	)
+
+	$('.eth').hover(
+		function(){
+		  $(this).attr('src', './images/ETHshot.jpg');
+		}
+	)
+
+	$('.eth').mouseout(
+		function() {
+			$(this).attr('src', './images/eth.jpg')
+		}
+	)
+
+	$('.bird').hover(
+		function(){
+		  $(this).attr('src', './images/FlappyInGame.jpg');
+		}
+	)
+
+	$('.bird').mouseout(
+		function() {
+			$(this).attr('src', './images/FlappyProject.jpg')
+		}
+	)
+
+	$('.stockWatch').hover(
+		function(){
+		  $(this).attr('src', './images/StockShot.jpg');
+		}
+	)
+
+	$('.stockWatch').mouseout(
+		function() {
+			$(this).attr('src', './images/StockWatch.jpg')
+		}
+	)
+
+	$('.insightUBC').hover(
+		function(){
+		  $(this).attr('src', './images/campusExplorer.jpg');
+		}
+	)
+
+	$('.insightUBC').mouseout(
+		function() {
+			$(this).attr('src', './images/InsightUBC.jpg')
+		}
+	)
 
 	// navigation
 	var OnePageNav = function() {
