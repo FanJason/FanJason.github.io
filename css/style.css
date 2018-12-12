@@ -8,6 +8,10 @@ h1 {
   font-size: 50px;
 }
 
+.sub {
+  letter-spacing: 2px;
+}
+
 .links:hover {
   color: #57d131;
 }
@@ -139,14 +143,14 @@ a {
   z-index: 200;
   background: #fff;}
   .site-navbar .navbar-brand {
-    background-image: url("../faviconWhite.png");
+    background-image: url("../v2White.png");
     height: 4em;
     width: 4em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;}
     .site-navbar .navbar-brand:hover {
-      background-image: url("../faviconColor.png");
+      background-image: url("../v2Color.png");
       height: 4em;
       width: 4em;
       background-position: center;
@@ -159,12 +163,19 @@ a {
         background: #fff !important;
         top: 0; }
         .site-navbar.bg-light .navbar-brand {
-          background-image: url("../favicon.png");
+          background-image: url("../v2.png");
           height: 2em;
           width: 2em;
           background-position: center;
           background-repeat: no-repeat;
-          background-size: contain;} }
+          background-size: contain;}
+          .site-navbar.bg-light .navbar-brand:hover {
+            background-image: url("../v2Color.png");
+            height: 2em;
+            width: 2em;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;} }
   .site-navbar .navbar-nav > li > a {
     color: #fff !important;
     font-size: 14px;
@@ -202,7 +213,7 @@ a {
     .site-navbar.scrolled.bg-light {
       background: #fff !important; }
     .site-navbar.scrolled .navbar-brand { 
-      background-image: url("../favicon.png");
+      background-image: url("../v2.png");
       height: 2em;
       width: 2em;
       background-position: center;
@@ -210,7 +221,7 @@ a {
       background-size: contain;
     }
     .site-navbar.scrolled .navbar-brand:hover { 
-      background-image: url("../faviconColor.png");
+      background-image: url("../v2Color.png");
       height: 2em;
       width: 2em;
       background-position: center;
