@@ -4,7 +4,7 @@ h1 {
   letter-spacing: 8px;
   animation-name: example;
   animation-duration: 2.7s;
-  font-size: 72px;
+  font-size: 300%;
   padding-bottom: 8px;
 }
 
