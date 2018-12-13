@@ -55,75 +55,24 @@
 			}
 	)
 
-	$('.clout').hover(
+	$('.port').hover(
 		function(){
-		  $(this).attr('src', './images/underDev.jpg');
+			let test = $(this).attr('src').split(".");
+			let name = test[test.length - 2];
+			if (name[name.length - 1] !== "1") {
+				name = name + "1." + test[test.length - 1];
+				$(this).attr('src', name);
+			} else {
+				let noOne = $(this).attr('src').split("1");
+				let name = noOne[0] + noOne[1];
+				$(this).attr('src', name);
+			}
 		}
 	)
 
-	$('.clout').mouseout(
+	$(".bottom").hover(
 		function() {
-			$(this).attr('src', './images/clout.jpg')
-		}
-	)
-
-	$('.bull').hover(
-		function(){
-		  $(this).attr('src', './images/BCGame.jpg');
-		}
-	)
-
-	$('.bull').mouseout(
-		function() {
-			$(this).attr('src', './images/bc.jpg')
-		}
-	)
-
-	$('.eth').hover(
-		function(){
-		  $(this).attr('src', './images/ETHshot.jpg');
-		}
-	)
-
-	$('.eth').mouseout(
-		function() {
-			$(this).attr('src', './images/ETH.jpg')
-		}
-	)
-
-	$('.bird').hover(
-		function(){
-			$(this).attr('src', './images/FlappyInGame.jpg');
-		}
-	)
-
-	$('.bird').mouseout(
-		function() {
-			$(this).attr('src', './images/FlappyProject.jpg')
-		}
-	)
-
-	$('.stockWatch').hover(
-		function(){
-		  $(this).attr('src', './images/stockShot.jpg');
-		}
-	)
-
-	$('.stockWatch').mouseout(
-		function() {
-			$(this).attr('src', './images/StockWatch.jpg')
-		}
-	)
-
-	$('.insightUBC').hover(
-		function(){
-		  $(this).attr('src', './images/campusExplorer.jpg');
-		}
-	)
-
-	$('.insightUBC').mouseout(
-		function() {
-			$(this).attr('src', './images/InsightUBC.jpg')
+			$(this).toggleClass("changed");
 		}
 	)
 
@@ -151,30 +100,6 @@
 		  console.log('nice');
 		})
 	};
-	
-
-
-
-	var offCanvasNav = function() {
-		// var toggleNav = $('.js-pb_nav-toggle'),
-		// 		offcanvasNav = $('.js-pb_offcanvas-nav_v1');
-		// if( toggleNav.length > 0 ) {
-		// 	toggleNav.click(function(e){
-		// 		$(this).toggleClass('active');
-		// 		offcanvasNav.addClass('active');
-		// 		e.preventDefault();
-		// 	});
-		// }
-		// offcanvasNav.click(function(e){
-		// 	if (offcanvasNav.hasClass('active')) {
-		// 		offcanvasNav.removeClass('active');
-		// 		toggleNav.removeClass('active');
-		// 	}
-		// 	e.preventDefault();
-		// })
-	};
-	
-
 
 	/*----------------------------------------
 		Animate Scroll
@@ -285,40 +210,6 @@
 
 	};
 
-	// Reflect scrolling in navigation
-	var navActive = function(section) {
-
-		var $el = $('.navbar-nav');
-		$el.find('li').removeClass('active');
-		$el.each(function(){
-			$(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
-		});
-
-	};
-
-	var navigationSection = function() {
-
-		var $section = $('section[data-section]');
-		
-		$section.waypoint(function(direction) {
-		  	if (direction === 'down') {
-		    	navActive($(this.element).data('section'));
-		  	}
-		}, {
-	  		offset: '150px'
-		});
-
-		$section.waypoint(function(direction) {
-		  	if (direction === 'up') {
-		    	navActive($(this.element).data('section'));
-		  	}
-		}, {
-		  	offset: function() { return -$(this.element).height() - 155; }
-		});
-
-	};
-
-
 	var smoothScroll = function() {
 		var $root = $('html, body');
 
@@ -330,66 +221,8 @@
 		});
 	};
 	
-	var magnificPopupControl = function() {
-
-
-		$('.image-popup').magnificPopup({
-			type: 'image',
-			removalDelay: 300,
-			mainClass: 'mfp-with-zoom',
-			gallery:{
-				enabled:true
-			},
-			zoom: {
-				enabled: true, // By default it's false, so don't forget to enable it
-
-				duration: 300, // duration of the effect, in milliseconds
-				easing: 'ease-in-out', // CSS transition easing function
-
-				// The "opener" function should return the element from which popup will be zoomed in
-				// and to which popup will be scaled down
-				// By defailt it looks for an image tag:
-				opener: function(openerElement) {
-				// openerElement is the element on which popup was initialized, in this case its <a> tag
-				// you don't need to add "opener" option if this code matches your needs, it's defailt one.
-				return openerElement.is('img') ? openerElement : openerElement.find('img');
-				}
-			}
-		});
-
-		$('.with-caption').magnificPopup({
-			type: 'image',
-			closeOnContentClick: true,
-			closeBtnInside: false,
-			mainClass: 'mfp-with-zoom mfp-img-mobile',
-			image: {
-				verticalFit: true,
-				titleSrc: function(item) {
-					return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-				}
-			},
-			zoom: {
-				enabled: true
-			}
-		});
-
-
-		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-
-      fixedContentPos: false
-    });
-	};
-
-
-
-
 	var portfolioMasonry = function() {
- $('.filters ul li').click(function(){
+ 		$('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
         
@@ -409,28 +242,15 @@
               }
             })
       };
-
-
 	};
 
-
 	$(function(){
-
 		OnePageNav();
-		offCanvasNav();
-
 		contentWayPoint();
 		navbarState();
-		// stellarInit();
 		clickMenu();
-		// navigationSection();
-		// magnificPopupControl();
 		smoothScroll();
 		portfolioMasonry();
 	});
-
-	
-
-
 })();
 

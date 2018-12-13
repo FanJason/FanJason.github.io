@@ -20,6 +20,10 @@ h1 {
   color: #57d131;
 }
 
+.dark .links:hover {
+  color: #57d131;
+}
+
 .appear {
   animation-name: fade;
   animation-duration: 3s;
@@ -93,6 +97,21 @@ h1 {
   width: 1.5em;
 }
 
+.changed:after {
+  background-image: url("images/arrowColor.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 4em;
+  content: '';
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  margin: 0 0 0 -0.75em;
+  position: absolute;
+  width: 1.5em;
+}
+
 .site-section {
     opacity:0;
 }
@@ -139,6 +158,10 @@ h1, h2, h3, h4, h5 {
 
 .dark .blog-entry .blog-entry-text h3 a {
   color: #fff;
+}
+
+.dark .blog-entry .blog-entry-text p {
+  color: #b3bdc6;
 }
 
 .dark .bg-light {
