@@ -31,6 +31,20 @@ h1 {
   opacity: 1;
 }
 
+.dark .specific {
+  background-color: #343a40;
+}
+
+.dark .specific:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: #343a40;
+}
+
+.dark .site-contact-details a {
+  color: #b3bdc6;
+}
+
 .space {
   padding-top: 35px;
 }
@@ -142,7 +156,8 @@ h1, h2, h3, h4, h5 {
   color: #fff;
 }
 
-.dark a {
+.dark a .btn{
+  background-color: #343a40;
   color: #b3bdc6;
 }
 
@@ -184,7 +199,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .dark .btn.btn-primary {
-  color: #b3bdc6;
+  color: #fff;
   background-color: #343a40;
   border-color: #fff;
 }
@@ -198,9 +213,26 @@ h1, h2, h3, h4, h5 {
   background-color: #798a9a;
 }
 
-.dark .resume-item h3 {
+.dark .resume-item h3, .dark .resume-item .school {
   color: #fff;
 }
+
+.dark .smoothscroll {
+  color: #fff;
+}
+
+.dark .navbar-light .navbar-toggler-icon {
+  background-image: url("../images/nav.png");
+  height: 18px;
+  width: 25px;
+  padding-bottom: 15px;
+}
+
+.dark .site-navbar.scrolled.awake {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  background: #343a43 !important; }
 
 a {
   -webkit-transition: .3s all;
@@ -235,13 +267,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;}
-    .color .navbar-brand {
-      background-image: url("../v2.png");
-      height: 4em;
-      width: 4em;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;}
     .site-navbar .navbar-brand:hover {
       background-image: url("../v2Color.png");
       height: 4em;
@@ -255,6 +280,15 @@ a {
       .site-navbar.bg-light {
         background: #fff !important;
         top: 0; }
+
+        .dark .site-navbar.bg-light .navbar-brand {
+          background-image: url("../v2White.png");
+          height: 2em;
+          width: 2em;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;}
+
         .site-navbar.bg-light .navbar-brand {
           background-image: url("../v2.png");
           height: 2em;
@@ -277,10 +311,6 @@ a {
     position: relative;
     text-transform: uppercase;
     letter-spacing: .2em;
-  }
-
-  .color .navbar-nav > li > a {
-    color: #343a40 !important;
   }
   .site-navbar .navbar-nav > li > a:hover {
     color: #57d131 !important;
@@ -317,6 +347,16 @@ a {
       background-repeat: no-repeat;
       background-size: contain;
     }
+
+    .dark .site-navbar.scrolled .navbar-brand { 
+      background-image: url("../v2White.png");
+      height: 2em;
+      width: 2em;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
     .site-navbar.scrolled .navbar-brand:hover { 
       background-image: url("../v2Color.png");
       height: 2em;
@@ -334,6 +374,7 @@ a {
       -ms-transform: translateY(0%);
       transform: translateY(0%);
       background: #fff !important; }
+    
     .site-navbar.scrolled.sleep {
       -webkit-transform: translateY(-90%);
       -ms-transform: translateY(-90%);
@@ -345,28 +386,16 @@ a {
       color: rgba(0, 0, 0, 0.4); }
     .site-navbar.scrolled .navbar-nav > li > a {
       color: rgba(0, 0, 0, 0.7) !important; }
+
+    .dark .site-navbar.scrolled .navbar-nav > li > a {
+      color: #fff !important; }
+
       .site-navbar.scrolled .navbar-nav > li > a:hover {
         color: #57d131 !important; }
       .site-navbar.scrolled .navbar-nav > li > a.active {
         color: #57d131 !important; }
     .site-navbar.scrolled .navbar-nav > li.active > a {
       color: #57d131 !important; }
-
-
-      .test {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: .1em;
-        position: relative;
-        text-transform: uppercase;
-        letter-spacing: .2em;
-        padding: 10.3px 10px !important; 
-      }
-      
-      .test:hover {
-        color: #57d131 !important;
-      }
 
 .site-hero {
   background-color: #ccc;

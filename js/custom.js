@@ -39,18 +39,20 @@
 
 	$(".enableDark").click(
 		function() {
-			if (document.getElementsByClassName("dark").length === 0) {
-				$("body").addClass("dark");
-				$("#section-services").removeClass("bg-light");
-				$("#section-contact").removeClass("bg-light");
-				$(".penguin").attr('src', './images/penguin.png');
-			} else {
-				$("body").removeClass("dark");
-				$("#section-services").addClass("bg-light");
-				$("#section-contact").addClass("bg-light");
-				$(".penguin").attr('src', './images/IMG-2841.jpg');
+				if (document.getElementsByClassName("dark").length === 0) {
+					$("body").addClass("dark");
+					$("#section-services").removeClass("bg-light");
+					$("#section-contact").removeClass("bg-light");
+					$(".penguin").attr('src', './images/penguin.png');
+					$('.enableDark').text('Light');
+				} else {
+					$("body").removeClass("dark");
+					$("#section-services").addClass("bg-light");
+					$("#section-contact").addClass("bg-light");
+					$(".penguin").attr('src', './images/IMG-2841.jpg');
+					$('.enableDark').text('Dark');
+				}
 			}
-		}
 	)
 
 	$('.clout').hover(
