@@ -369,14 +369,22 @@ a {
       color: rgba(0, 0, 0, 0.4); }
     .site-navbar.scrolled .navbar-nav > li > a {
       color: rgba(0, 0, 0, 0.7) !important; }
+    
+      .site-navbar.scrolled .navbar-nav > li > a:hover {
+        color: #57d131 !important; }
+      .site-navbar.scrolled .navbar-nav > li > a.active {
+        color: #57d131 !important; }
+    .site-navbar.scrolled .navbar-nav > li.active > a {
+      color: #57d131 !important; }
 
+      
     .dark .site-navbar.navbar-light.bg-light .navbar-nav > li > a {
       color: #fff !important; }
 
       .dark .site-navbar.navbar-light.bg-light .navbar-nav > li > a:hover {
         color: #57d131 !important; }
 
-        .dark .site-navbar.scrolled.awake, .site-navbar.scrolled.sleep {
+        .dark .site-navbar.scrolled.awake, .dark .site-navbar.scrolled.sleep {
           -webkit-transition: .3s all ease;
           -o-transition: .3s all ease;
           transition: .3s all ease; }
@@ -387,18 +395,31 @@ a {
           transform: translateY(0%);
           background: #343a43 !important; }
         
-        .dark .site-navbar.scrolled.sleep {
+        .dark .site-navbar.navbar-light.bg-light.scrolled.sleep {
           -webkit-transform: translateY(-90%);
           -ms-transform: translateY(-90%);
           transform: translateY(-90%);
           background: #57d131 !important; }
-    
-      .site-navbar.scrolled .navbar-nav > li > a:hover {
-        color: #57d131 !important; }
-      .site-navbar.scrolled .navbar-nav > li > a.active {
-        color: #57d131 !important; }
-    .site-navbar.scrolled .navbar-nav > li.active > a {
-      color: #57d131 !important; }
+
+          .dark .test {
+            -webkit-transform: translateY(-90%);
+            -ms-transform: translateY(-90%);
+            transform: translateY(-90%);
+            background: #57d131 !important; }
+
+          .dark .site-navbar.scrolled .navbar-brand {
+            color: #000; }
+          .dark .site-navbar.scrolled .dropdown > a:before {
+            color: rgba(0, 0, 0, 0.4); }
+          .dark .site-navbar.scrolled .navbar-nav > li > a {
+            color: rgba(0, 0, 0, 0.7) !important; }
+          
+            .dark .site-navbar.scrolled .navbar-nav > li > a:hover {
+              color: #57d131 !important; }
+            .dark .site-navbar.scrolled .navbar-nav > li > a.active {
+              color: #57d131 !important; }
+          .dark .site-navbar.scrolled .navbar-nav > li.active > a {
+            color: #57d131 !important; }
 
 .site-hero {
   background-color: #ccc;
