@@ -124,30 +124,6 @@ body {
   color: #fff;
 }
 
-.p1-gradient-bg, .thumb .overlay-bg {
-  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
-
-.p1-gradient-color {
-  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-::-moz-selection {
-  background: #000;
-  color: #fff; }
-
-::selection {
-  background: #000;
-  color: #fff; }
-
-::-moz-selection {
-  background: #000;
-  color: #fff; }
-
 h1, h2, h3, h4, h5 {
   color: #2c3e50;
   font-weight: 200; }
@@ -228,7 +204,7 @@ h1, h2, h3, h4, h5 {
   padding-bottom: 15px;
 }
 
-  .dark .site-navbar.navbar-light.bg-light {
+  .dark .site-navbar.navbar-light.bg-light.scrolled {
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
     transform: translateY(0%);
@@ -260,6 +236,7 @@ a {
   width: 100%;
   z-index: 200;
   background: #fff;}
+
   .site-navbar .navbar-brand {
     background-image: url("../v2White.png");
     height: 4em;
@@ -280,6 +257,11 @@ a {
       .site-navbar.bg-light {
         background: #fff !important;
         top: 0; }
+
+        .dark .site-navbar.bg-light {
+          background: #343a40 !important;
+          top: 0; }
+
 
         .dark .site-navbar.bg-light .navbar-brand {
           background-image: url("../v2White.png");
@@ -513,38 +495,6 @@ a {
   font-size: 20px;
   font-weight: 200; }
 
-.site-link {
-  position: relative; }
-  .site-link i {
-    position: relative;
-    top: 2px;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
-  .site-link:hover i {
-    position: relative;
-    margin-left: 20px; }
-
-.site-list {
-  padding: 0;
-  margin: 0; }
-  .site-list li {
-    margin: 0 0 10px 0;
-    padding: 0;
-    position: relative;
-    list-style: none; }
-    .site-list li:before {
-      font-family: 'icomoon';
-      position: absolute;
-      top: .1em;
-      left: 0; }
-    .site-list li.site-check {
-      padding-left: 30px; }
-      .site-list li.site-check:before {
-        color: #57d131;
-        font-size: 16px;
-        content: "\ebd3"; }
-
 .btn {
   border-radius: 100px;
   text-transform: uppercase;
@@ -557,37 +507,6 @@ a {
     color: #fff; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
       background: #4ebe2a; }
-
-.progress {
-  overflow: visible;
-  margin-bottom: 26px;
-  height: 4px; }
-  .progress .progress-bar {
-    background-color: #57d131;
-    position: relative;
-    border-radius: 4px; }
-    .progress .progress-bar span {
-      background-color: #57d131;
-      position: absolute;
-      bottom: -20px;
-      font-size: 10px;
-      line-height: 10px;
-      padding: 2px 3px 2px 4px;
-      right: -1.4em;
-      border-radius: 2px; }
-    .progress .progress-bar span:after {
-      bottom: 100%;
-      left: 50%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(255, 255, 255, 0);
-      border-bottom-color: #57d131;
-      border-width: 5px;
-      margin-left: -5px; }
 
 .skill h3 {
   font-size: 18px; }
@@ -853,35 +772,3 @@ a {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-
-.block-47 .block-47-image {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 70px;
-  flex: 0 0 70px;
-  display: block; }
-  .block-47 .block-47-image img {
-    border: 5px solid #fff;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2); }
-
-.block-47 .block-47-quote {
-  margin-left: 40px;
-  padding: 30px;
-  background: #fff;
-  border-radius: 7px;
-  position: relative;
-  -webkit-box-shadow: 0 2px 30px -2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 30px -2px rgba(0, 0, 0, 0.1); }
-  .block-47 .block-47-quote:before {
-    content: "";
-    border: 1px solid red;
-    z-index: 2;
-    position: absolute;
-    left: -15px;
-    border-width: 0 20px 20px 0;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent; }
-  .block-47 .block-47-quote .block-47-quote-author {
-    font-size: 14px;
-    color: #666666; }
