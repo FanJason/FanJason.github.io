@@ -31,11 +31,27 @@
 				var bottom_of_object = $(this).position().top;
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
 					if (bottom_of_window > bottom_of_object + 200){
-					$(this).animate({'opacity':'1', }, {"duration": 1500});
+					$(this).animate({'opacity':'1'}, {"duration": 1500});
 				}
 			});
 		});
 	});
+
+	$(".enableDark").click(
+		function() {
+			if (document.getElementsByClassName("dark").length === 0) {
+				$("body").addClass("dark");
+				$("#section-services").removeClass("bg-light");
+				$("#section-contact").removeClass("bg-light");
+				$(".penguin").attr('src', './images/penguin.png');
+			} else {
+				$("body").removeClass("dark");
+				$("#section-services").addClass("bg-light");
+				$("#section-contact").addClass("bg-light");
+				$(".penguin").attr('src', './images/IMG-2841.jpg');
+			}
+		}
+	)
 
 	$('.clout').hover(
 		function(){
@@ -75,7 +91,7 @@
 
 	$('.bird').hover(
 		function(){
-		  $(this).attr('src', './images/FlappyInGame.jpg');
+			$(this).attr('src', './images/FlappyInGame.jpg');
 		}
 	)
 
@@ -243,17 +259,6 @@
 		    $this.removeClass('awake');
 		  });
 	};
-
-	
-	
-	
-	// var stellarInit = function() {
-	// 	if( !isMobile.any() ) {
-	// 		$(window).stellar();
-	// 	}
-	// };
-
-
 
 	// Page Nav
 	var clickMenu = function() {
