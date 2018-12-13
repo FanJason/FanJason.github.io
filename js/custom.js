@@ -24,7 +24,6 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-	//a
 
 	$(document).ready(function() {
 		$(window).scroll(function() {
