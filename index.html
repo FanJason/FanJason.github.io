@@ -370,6 +370,9 @@
                         type: "POST",
                         url: 'index.php',
                         data: {email: email},
+                        beforeSend: function(xhr){
+                           xhr.withCredentials = true;
+                        },
                         success: function(data){
                             alert(data);
                         }
