@@ -317,6 +317,7 @@ a {
     text-transform: uppercase;
     letter-spacing: .2em;
   }
+
   .site-navbar .navbar-nav > li > a:hover {
     color: #57d131 !important;
     font-size: 14px;

@@ -277,7 +277,7 @@
                   </div>
                </div>
                <div class="col-md-7 mb-5 mb-md-0">
-                  <form action="" class="site-form">
+                  <form action="index.php" method="POST" class="site-form">
                      <h3 class="mb-5">Get In Touch</h3>
                      <div class="form-group">
                         <input type="text" class="form-control px-3 py-4" placeholder="Your Name">
@@ -341,6 +341,15 @@
                </p>
             </div>
          </div>
+
+      <form action="index.php" method="post">
+      First Name: <input type="text" name="first_name"><br>
+      Last Name: <input type="text" name="last_name"><br>
+      Email: <input type="text" name="email"><br>
+      Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+      <input type="submit" name="submit" value="Submit">
+      </form>
+
       </footer>
       <script src="js/vendor/jquery.min.js"></script>
       <script src="js/vendor/popper.min.js"></script>
