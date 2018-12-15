@@ -76,6 +76,15 @@
 		}
 	)
 
+	$("#submit").on("click", function() {
+		$.ajax({
+			url: "//formspree.io/jasonfan017@gmail.com", 
+			method: "POST",
+			data: {message: "hello!"},
+			dataType: "json"
+		});
+	});
+
 	// navigation
 	var OnePageNav = function() {
 		var navToggler = $('.navbar-toggler');
