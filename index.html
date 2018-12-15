@@ -368,6 +368,7 @@
                     var email = $('#email').val();
                     $.ajax({
                         type: "POST",
+                        contentType: "application/text; charset=utf-8",
                         url: 'index.php',
                         data: {email: email},
                         beforeSend: function(xhr){
