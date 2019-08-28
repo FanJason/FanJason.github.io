@@ -24,6 +24,12 @@ h1 {
   color: #57d131;
 }
 
+.profilePhoto {
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
 .appear {
   animation-name: fade;
   animation-duration: 3s;
