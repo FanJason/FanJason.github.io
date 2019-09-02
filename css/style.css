@@ -8,6 +8,10 @@ h1 {
   font-size: 50px;
 }
 
+span.icon-wrench {
+  padding-right: 10px;
+}
+
 .visit:visited {
   color: #fff;
 }
