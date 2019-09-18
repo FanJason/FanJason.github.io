@@ -43,12 +43,12 @@
 					$("body").addClass("dark");
 					$("#section-services").removeClass("bg-light");
 					$("#section-contact").removeClass("bg-light");
-					$('.enableDark').text('Light');
+					$('.enableDark').text('Light Mode');
 				} else {
 					$("body").removeClass("dark");
 					$("#section-services").addClass("bg-light");
 					$("#section-contact").addClass("bg-light");
-					$('.enableDark').text('Dark');
+					$('.enableDark').text('Dark Mode');
 				}
 			}
 	)
