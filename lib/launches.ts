@@ -22,6 +22,12 @@ export const launches: Launch[] = [
     href: "https://tryaries.com",
   },
   {
+    date: "2025-10-16",
+    title: "Shipped IG Rings",
+    detail: "An annual award for the top 25 creators on Instagram taking creative chances.",
+    href: "https://creators.instagram.com/blog/introducing-instagram-rings",
+  },
+  {
     date: "2025-05-15",
     title: "Starting building Aries",
     detail: "A fitness tracker for the mind. Track and train your mind just like your body.",
