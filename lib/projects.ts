@@ -32,13 +32,13 @@ export const projects: Project[] = [
     year: "2026",
     href: "https://lang-token-evaluator.vercel.app/research",
   },
-  // {  
-  //   title: "Claude Token Overlays",
-  //   description:
-  //     "Starva social overlays but for LLM usage.",
-  //   year: "2026",
-  //   href: "https://height-verification.vercel.app/",
-  // },
+  {  
+    title: "Claude Code Overlays",
+    description:
+      "Shareable social overlays for your Claude Code sessions.",
+    year: "2026",
+    href: "https://claude-overlay.vercel.app/",
+  },
   {
     title: "Height Verification App",
     description:
