@@ -19,13 +19,13 @@ export const launches: Launch[] = [
     date: "2025-12-19",
     title: "Aries hits the App Store",
     detail: "First iOS release of Aries.",
-    href: "tryaries.com",
+    href: "https://tryaries.com",
   },
   {
     date: "2025-05-15",
     title: "Starting building Aries",
     detail: "A fitness tracker for the mind. Track and train your mind just like your body.",
-    href: "tryaries.com",
+    href: "https://tryaries.com",
   },
   {
     date: "2025-03-24",
