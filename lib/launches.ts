@@ -11,17 +11,6 @@ export type Launch = {
 
 export const launches: Launch[] = [
   {
-    date: "2026-01-21",
-    title: "Aries Dissolved",
-    detail: "Just wasn't sticky enough.",
-  },
-  {
-    date: "2025-12-19",
-    title: "Aries hits the App Store",
-    detail: "First iOS release of Aries.",
-    href: "https://tryaries.com",
-  },
-  {
     date: "2025-10-16",
     title: "Shipped IG Rings",
     detail: "An annual award for the top 25 creators on Instagram taking creative chances.",
