@@ -69,7 +69,18 @@ export default function Home() {
             {launches.map((launch, i) => {
               const inner = (
                 <>
-                  <span className="absolute -left-[5px] top-1.5 size-2.5 rounded-full bg-accent ring-4 ring-background" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="absolute left-[-8px] top-1.5 size-3.5"
+                    aria-hidden="true"
+                  >
+                    <polygon
+                      points="12,2 21,7 21,17 12,22 3,17 3,7"
+                      fill="var(--background)"
+                      stroke="rgba(255,255,255,0.55)"
+                      strokeWidth="1.5"
+                    />
+                  </svg>
                   <time className="block text-xs tabular-nums text-subtle">
                     {dateFmt.format(new Date(launch.date))}
                   </time>
